@@ -1,5 +1,7 @@
 import Header from "@/src/components/Header/Header";
 import Sobre from "@/src/components/Sobre/Sobre";
+import Technology from "@/src/components/Technology/Technology";
+
 
 
 export default function Home() {
@@ -7,6 +9,7 @@ export default function Home() {
     <div className="w-full h-screen bg-gray-50">
       <Header />
       <Sobre />
+      <Technology />
     </div>
   );
 }
