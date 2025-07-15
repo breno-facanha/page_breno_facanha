@@ -29,9 +29,6 @@ export default function Carrosel() {
                 <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech.toLowerCase()}/${tech.toLowerCase()}-original.svg`} alt={tech} />
             )}
             </p>
-            <p className="text-gray-400 font-light text-lg mt-2">
-                {tech}
-            </p>
            
         </span>
     );
