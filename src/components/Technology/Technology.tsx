@@ -1,8 +1,9 @@
 import Carrosel from "../Carrosel/Carrosel";
+import CardTecnology from "../CardTecnology/CardTecnology";
 
 export default function Technology() {
     return (
-        <div className="w-full h-auto flex flex-col justify-center items-center gap-1 bg-gray-50 ">
+        <div className="w-full h-screen flex flex-col justify-around items-center gap-1 bg-gray-50  pt-10">
              <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-purple-600">
                 Tecnologias 
                 <span className="text-black text-2xl font-bold "> que Domino</span>
@@ -12,7 +13,21 @@ export default function Technology() {
                     Sempre aprendendo e me adaptando às tecnologias mais modernas do mercado
                 </p>
             </div>
-            <Carrosel />
+            <div className="w-full h-auto py-10 flex justify-center items-center overflow-hidden">
+                <Carrosel />
+            </div>
+            <div className="w-full h-screen flex flex-col justify-center items-center gap-5 mt-10 sm:flex-row sm:gap-30 bg-gray-50 px-4">
+                <CardTecnology 
+                    url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    titulo="Front-End"
+                    description="Interfaces modernas e responsivas com foco na experiência do usuário"
+                />
+                <CardTecnology
+                    url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                    titulo="Back-End"
+                    description="Desenvolvimento de APIs robustas e escaláveis com Node.js e Express"
+                />
+            </div>
         </div>
         
     )
