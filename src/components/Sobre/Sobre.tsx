@@ -29,7 +29,7 @@ export default function Sobre() {
                 <CardSobre  value="4" description="Projetos Concluidos"/>
                 <CardSobre  value="9" description="Tecnologias"/>
             </div>
-            <div className="animate-bounce flex h-auto justify-end items-center mt-20">
+            <div className="hidden sm:animate-bounce sm:flex h-auto justify-end items-center mt-20">
                 <MoveDown color="gray"/>
             </div>
         </div>
