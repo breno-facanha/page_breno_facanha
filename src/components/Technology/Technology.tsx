@@ -3,7 +3,7 @@ import CardTecnology from "../CardTecnology/CardTecnology";
 
 export default function Technology() {
     return (
-        <div className="w-full h-screen flex flex-col justify-around items-center gap-1 bg-gray-50  pt-10">
+        <div className="w-full flex flex-col justify-around items-center bg-gray-50">
              <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-purple-600">
                 Tecnologias 
                 <span className="text-black text-2xl font-bold "> que Domino</span>
@@ -16,7 +16,7 @@ export default function Technology() {
             <div className="w-full h-auto py-10 flex justify-center items-center overflow-hidden">
                 <Carrosel />
             </div>
-            <div className="w-full h-screen flex flex-col justify-center items-center gap-5 mt-10 sm:flex-row sm:gap-30 bg-gray-50 px-4">
+            <div className="w-full h-auto pt-10 flex flex-col justify-center items-center gap-5 sm:flex-row sm:gap-30 bg-gray-50 px-4">
                 <CardTecnology 
                     url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                     titulo="Front-End"

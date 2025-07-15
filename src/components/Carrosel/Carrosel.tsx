@@ -38,7 +38,7 @@ export default function Carrosel() {
             <div 
                 className="flex whitespace-nowrap gap-8"
                 style={{
-                    animation: 'marquee 15s linear infinite'
+                    animation: 'marquee 10s linear infinite'
                 }}
             >
                 {technologies.map((tech, idx) => (

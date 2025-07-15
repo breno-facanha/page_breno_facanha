@@ -3,7 +3,7 @@ import CardSobre from "../CardSobre/CardSobre";
 
 export default function Sobre() {
     return (
-        <div className="w-full min-h-screen  bg-gray-50 flex flex-col items-center pt-25 text-center px-2 sm:pt-40">
+        <div className="w-full min-h-screen  justify-around bg-gray-50 flex flex-col items-center pt-25 text-center px-2 sm:pt-40">
             <p className="bg-[#F1EBFD] px-5 py-2 text-sm rounded-2xl text-[#8C36EA] font-bold">Disponivel para novos projetos</p>
             <p className="text-6xl text-black font-extrabold pt-10 m-0">Olá, eu sou</p>
             <p className="text-6xl text-[#8C36EA] font-extrabold">Breno Façanha</p>
@@ -29,7 +29,7 @@ export default function Sobre() {
                 <CardSobre  value="4" description="Projetos Concluidos"/>
                 <CardSobre  value="9" description="Tecnologias"/>
             </div>
-            <div className="hidden sm:animate-bounce sm:flex h-auto justify-end items-center mt-20">
+            <div className="hidden sm:animate-bounce sm:flex h-auto justify-end items-center">
                 <MoveDown color="gray"/>
             </div>
         </div>
