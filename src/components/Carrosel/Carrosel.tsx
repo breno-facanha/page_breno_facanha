@@ -21,14 +21,17 @@ export default function Carrosel() {
     ]
 
     const TechBadge = ({ tech }: { tech: string })  => (
-        <span className="flex flex-col justify-center items-center w-44 ">
-           <p className="w-5">
+        <span className="flex flex-col justify-center items-center w-44 hover:scale-115 transition-transform duration-300 ease-in-out">
+           <p className="w-10 mt-10 ">
             {imagens.includes(tech) ? (
-                <img src={tech} alt={tech} className="w-8 h-8 mb-2" />  
+                <img src={tech} alt={tech} className="w-10 h-10 mb-2" />  
             ) : (
-                <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech.toLowerCase()}/${tech.toLowerCase()}-original.svg`} alt={tech} className="w-8 h-8 mb-2" />
+                <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech.toLowerCase()}/${tech.toLowerCase()}-original.svg`} alt={tech} />
             )}
-            </p> 
+            </p>
+            <p className="text-gray-400 font-light text-lg mt-2">
+                {tech}
+            </p>
            
         </span>
     );
