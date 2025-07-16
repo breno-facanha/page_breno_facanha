@@ -24,7 +24,16 @@ export default function MyProject() {
                     </p>
                 </button>
             </div>
-                <CardProject />
+            <div className="flex flex-wrap justify-center items-center gap-20 w-full max-w-6xl mb-10">
+                <CardProject 
+                    imageUrl="focus-timer.png" 
+                    title="Focus Timer" 
+                    description="Cronometro no estilo pomodoro, ideal para estudos e concentração em alguma demanda" 
+                    technologies={["Html", "Css", "JavaScript"]}
+                    githubLink= "https://github.com/breno-facanha/projeto-explorer-013"
+                    liveDemoLink= "https://breno-facanha.github.io/projeto-explorer-013/"
+                />
+            </div>
         </div>
     )
 }

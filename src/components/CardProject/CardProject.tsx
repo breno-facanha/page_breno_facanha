@@ -1,23 +1,40 @@
-export default function CardProject() {
+import { Github, SquareArrowOutUpRight } from "lucide-react"
+
+interface CardProjectProps {
+    imageUrl: string;
+    title: string;
+    description: string;
+    technologies: string[];
+    githubLink: string;
+    liveDemoLink?: string;
+}
+
+export default function CardProject({ imageUrl, title, description, technologies, githubLink, liveDemoLink }: CardProjectProps) {
     return(
-        <div className="w-80 h-96 border-1 border-gray-500 text-center rounded-2xl">
-            <div className="h-40 bg-red-500">
-                <img src="" alt="Project Thumbnail" className="w-full h-40 object-cover rounded-t-2xl"/>
+        <div className="w-80 h-100 border-1 border-gray-500 text-center rounded-2xl hover:scale-105 transition-all duration-500 ease-in-out shadow-lg bg-white">
+            <div className="h-40 rounded-t-2xl">
+                <img src={imageUrl} alt="Project Thumbnail" className="w-full h-40 object-cover rounded-t-2xl"/>
             </div>
-            <div className="text-start pl-5">
-                <h2 className="text-xl font-bold mt-4 text-black">Nome do Projeto</h2>
-                <p className="text-gray-600 mt-2 text-md">Descrição breve do projeto, destacando suas principais funcionalidades e tecnologias utilizadas.</p>
+            <div className="text-start pl-5 pr-5">
+                <h2 className="text-xl font-bold mt-4 text-black">{title}</h2>
+                <p className="text-gray-600 mt-2 text-md line-clamp-3">{description}</p>
             </div>
             <div className="text-black flex gap-2 items-center pl-5 mt-4">
-                <p className="w-20text-black px-1 py-1 bg-gray-200 rounded-lg">React</p>
-                <p className="w-20text-black px-1 py-1 bg-gray-200 rounded-lg">Node.Js</p>
-                <p className="w-20text-black px-1 py-1 bg-gray-200 rounded-lg">Express</p>
-                <p className="w-20text-black px-1 py-1 bg-gray-200 rounded-lg">Express</p>
+                {technologies.map((tech, index) => (
+                    <p key={index} className="text-black px-2 py-1 text-sm font-semibold bg-gray-200 rounded-lg">
+                        {tech}
+                    </p>
+                ))}
             </div>
-            <div className="mt-2 text-black justify-between items-center flex px-5">
-
-                <a href="">Git Hub</a>
-                <a href="">Acessar Projeto</a>
+            <div className=" text-black justify-between items-center flex px-5 mt-5 ">
+                <a href={githubLink} className="flex items-center gap-2 hover:bg-gray-100 px-3 py-2 rounded-lg transition-colors duration-300">
+                    <Github className="text-black" size={17} />
+                    <span className="text-sm">Git Hub</span>
+                </a>
+                <a href={liveDemoLink} className="flex items-center gap-2 hover:bg-gray-100 px-3 py-2 rounded-lg transition-colors duration-300">
+                    <SquareArrowOutUpRight size={16} />
+                    <span className="text-sm">Live Demo</span>
+                </a>
             </div>
         </div>
     )
