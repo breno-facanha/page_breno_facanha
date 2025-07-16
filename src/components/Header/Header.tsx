@@ -1,6 +1,16 @@
 import { Github, Linkedin, Mail, Menu } from "lucide-react";
+import { useState } from "react";
 
 export default function Header() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    function toggleMenu() {
+        setIsOpen(!isOpen);
+    }
+    function closeMenu() {
+        setIsOpen(false);
+    }
+    console.log(isOpen);
     return (
         <div className="fixed top-0 w-full z-50 bg-white">
             <header className="flex items-center h-18 bg-white sm:justify-between px-5 shadow-md justify-between">
@@ -20,10 +30,33 @@ export default function Header() {
                     <a href="" target="_blank" className="hover:bg-gray-100 px-3 py-3 rounded-xl"><Mail color="black" size={17}/></a>
                 </div>
                 <div className="md:hidden ">
-                    <button className="hover:bg-gray-100 rounded-xl transform transition duration-400 p-3">
+                    <button 
+                        className="hover:bg-gray-100 rounded-xl transform transition duration-400 p-3"
+                        onClick={toggleMenu}>
                         <Menu color="black" size={20}/>
                     </button>
                 </div>
+                {isOpen && (
+                    <div className="w-full absolute top-16 right-0 bg-white shadow-lg rounded-lg p-4 z-50">
+                        <ul className="space-y-2">
+                            <li>
+                                <a href="#" className="block text-gray-800 hover:text-gray-900" onClick={closeMenu}>Início</a>
+                            </li>
+                            <li>
+                                <a href="#sobre" className="block text-gray-800 hover:text-gray-900" onClick={closeMenu}>Sobre</a>
+                            </li>
+                            <li>
+                                <a href="#tec" className="block text-gray-800 hover:text-gray-900" onClick={closeMenu}>Tecnologias</a>
+                            </li>
+                            <li>
+                                <a href="#project" className="block text-gray-800 hover:text-gray-900" onClick={closeMenu}>Projetos</a>
+                            </li>
+                            <li>
+                                <a href="" className="block text-gray-800 hover:text-gray-900" onClick={closeMenu}>Contato</a>
+                            </li>
+                        </ul>
+                        </div>
+                )}
             </header>
       </div>
     )

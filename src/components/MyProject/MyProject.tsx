@@ -2,7 +2,7 @@ import CardProject from "../CardProject/CardProject";
 
 export default function MyProject() {
     return (
-        <div id="project" className="w-full h-screen bg-gray-50 flex flex-col items-center justify-center  px-4">
+        <div id="project" className="w-full h-auto bg-gray-50 flex flex-col items-center pt-25 px-4">
             <div className="flex gap-2 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-purple-600">
             <span className="text-black text-2xl font-bold ">Meus</span>
                 Projetos 
@@ -24,7 +24,7 @@ export default function MyProject() {
                     </p>
                 </button>
             </div>
-            <div className="flex flex-wrap justify-center items-center gap-20 w-full max-w-6xl mb-10">
+            <div className=" flex flex-wrap justify-center items-center gap-20 w-full max-w-6xl mb-10 ">
                 <CardProject 
                     imageUrl="focus-timer.png" 
                     title="Focus Timer" 
@@ -32,6 +32,14 @@ export default function MyProject() {
                     technologies={["Html", "Css", "JavaScript"]}
                     githubLink= "https://github.com/breno-facanha/projeto-explorer-013"
                     liveDemoLink= "https://breno-facanha.github.io/projeto-explorer-013/"
+                />
+                <CardProject 
+                    imageUrl="to-do-list.png" 
+                    title="Gerenciador de Tarefas" 
+                    description="Uma aplicação simples para gerenciar suas tarefas diárias, com funcionalidades de adicionar, remover e marcar como concluídas" 
+                    technologies={["JavaScript", "React", "Tailwind CSS"]}
+                    githubLink= "https://github.com/breno-facanha/lista-de-tarefas"
+                    liveDemoLink= "https://lista-de-tarefas-smoky-zeta.vercel.app/"
                 />
                 <CardProject 
                     imageUrl="to-do-list.png" 
