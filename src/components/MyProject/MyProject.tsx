@@ -33,6 +33,14 @@ export default function MyProject() {
                     githubLink= "https://github.com/breno-facanha/projeto-explorer-013"
                     liveDemoLink= "https://breno-facanha.github.io/projeto-explorer-013/"
                 />
+                <CardProject 
+                    imageUrl="to-do-list.png" 
+                    title="Gerenciador de Tarefas" 
+                    description="Portfólio pessoal, onde apresento meus projetos e habilidades como desenvolvedor web" 
+                    technologies={["JavaScript", "React", "Tailwind CSS"]}
+                    githubLink= "https://github.com/breno-facanha/lista-de-tarefas"
+                    liveDemoLink= "https://lista-de-tarefas-smoky-zeta.vercel.app/"
+                />
             </div>
         </div>
     )
