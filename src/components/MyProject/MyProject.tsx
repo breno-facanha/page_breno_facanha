@@ -2,7 +2,7 @@ import CardProject from "../CardProject/CardProject";
 
 export default function MyProject() {
     return (
-        <div className="w-full h-auto bg-gray-50 flex flex-col items-center justify-center pt-20 px-4">
+        <div id="project" className="w-full h-screen bg-gray-50 flex flex-col items-center justify-center  px-4">
             <div className="flex gap-2 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-purple-600">
             <span className="text-black text-2xl font-bold ">Meus</span>
                 Projetos 
@@ -36,7 +36,7 @@ export default function MyProject() {
                 <CardProject 
                     imageUrl="to-do-list.png" 
                     title="Gerenciador de Tarefas" 
-                    description="Portfólio pessoal, onde apresento meus projetos e habilidades como desenvolvedor web" 
+                    description="Uma aplicação simples para gerenciar suas tarefas diárias, com funcionalidades de adicionar, remover e marcar como concluídas" 
                     technologies={["JavaScript", "React", "Tailwind CSS"]}
                     githubLink= "https://github.com/breno-facanha/lista-de-tarefas"
                     liveDemoLink= "https://lista-de-tarefas-smoky-zeta.vercel.app/"

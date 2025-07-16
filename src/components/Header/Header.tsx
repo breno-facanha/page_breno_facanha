@@ -8,16 +8,16 @@ export default function Header() {
                     {'< '}Breno Façanha{' />'}
                 </div>
                 <div className="hidden md:flex md:items-center md:text-gray-800 md:font-medium md:space-x-8 sm:text-md ">
-                    <a href="" className="hover:scale-110 hover:text-gray-900 duration-200 transform">Início</a>
-                    <a href="" className="hover:scale-110 hover:text-gray-900 duration-200 transform">Sobre</a>
-                    <a href="" className="hover:scale-110 hover:text-gray-900 duration-200 transform">Tecnologias</a>
-                    <a href="" className="hover:scale-110 hover:text-gray-900 duration-200 transform">Projetos</a>
+                    <a href="#" className="hover:scale-110 hover:text-gray-900 duration-200 transform">Início</a>
+                    <a href="#sobre" className="hover:scale-110 hover:text-gray-900 duration-200 transform">Sobre</a>
+                    <a href="#tec" className="hover:scale-110 hover:text-gray-900 duration-200 transform">Tecnologias</a>
+                    <a href="#project" className="hover:scale-110 hover:text-gray-900 duration-200 transform">Projetos</a>
                     <a href="" className="hover:scale-110 hover:text-gray-900 duration-200 transform">Contato</a>
                 </div>
                 <div className="hidden md:flex md:items-center md:space-x-4">
-                    <button className="hover:bg-gray-100 px-2 py-2 rounded-md"><Github color="black" size={17} /></button>
-                    <button className="hover:bg-gray-100 px-2 py-2 rounded-md"><Linkedin color="black" size={17}/></button>
-                    <button className="hover:bg-gray-100 px-2 py-2 rounded-md"><Mail color="black" size={17}/></button>
+                    <a href="https://github.com/breno-facanha" target="_blank" className="hover:bg-gray-100 px-3 py-3 rounded-xl"><Github color="black" size={17} /></a>
+                    <a href="https://www.linkedin.com/in/breno-fa%C3%A7anha-5a57a3b6/" target="_blank" className="hover:bg-gray-100 px-3 py-3 rounded-xl"><Linkedin color="black" size={17}/></a>
+                    <a href="" target="_blank" className="hover:bg-gray-100 px-3 py-3 rounded-xl"><Mail color="black" size={17}/></a>
                 </div>
                 <div className="md:hidden ">
                     <button className="hover:bg-gray-100 rounded-xl transform transition duration-400 p-3">
