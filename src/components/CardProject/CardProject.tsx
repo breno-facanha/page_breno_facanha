@@ -11,7 +11,7 @@ interface CardProjectProps {
 
 export default function CardProject({ imageUrl, title, description, technologies, githubLink, liveDemoLink }: CardProjectProps) {
     return(
-        <div className="w-80 h-100 border-1 border-gray-500 text-center rounded-2xl hover:scale-105 transition-all duration-500 ease-in-out shadow-lg bg-white">
+        <div className="w-80 h-100 border-1 border-gray-500 text-center rounded-2xl hover:scale-105 transition-all duration-500 ease-in-out shadow-lg bg-white mt-8">
             <div className="h-40 rounded-t-2xl">
                 <img src={imageUrl} alt="Project Thumbnail" className="w-full h-40 object-cover rounded-t-2xl"/>
             </div>
