@@ -27,11 +27,11 @@ export default function CardProject({ imageUrl, title, description, technologies
                 ))}
             </div>
             <div className=" text-black justify-between items-center flex px-5 mt-5 ">
-                <a href={githubLink} className="flex items-center gap-2 hover:bg-gray-100 px-3 py-2 rounded-lg transition-colors duration-300">
+                <a href={githubLink} className="flex items-center gap-2 hover:bg-gray-100 px-3 py-2 rounded-lg transition-colors duration-300" target="_blank">
                     <Github className="text-black" size={17} />
                     <span className="text-sm">Git Hub</span>
                 </a>
-                <a href={liveDemoLink} className="flex items-center gap-2 hover:bg-gray-100 px-3 py-2 rounded-lg transition-colors duration-300">
+                <a href={liveDemoLink} className="flex items-center gap-2 hover:bg-gray-100 px-3 py-2 rounded-lg transition-colors duration-300" target="_blank">
                     <SquareArrowOutUpRight size={16} />
                     <span className="text-sm">Live Demo</span>
                 </a>
