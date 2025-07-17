@@ -4,9 +4,9 @@ import CardTecnology from "../CardTecnology/CardTecnology";
 export default function Technology() {
     return (
         <div id="tec" className="w-full h-screen flex flex-col justify-around items-center bg-gray-50 pt-25">
-             <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-purple-600">
+             <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-purple-600">
                 Tecnologias 
-                <span className="text-black text-2xl font-bold "> que Domino</span>
+                <span className="text-black text-3xl font-bold "> que Domino</span>
             </div>
             <div className="w-full text-center mt-4 px-3">
                 <p className="w-full text-gray-500 text-xl font-medium">

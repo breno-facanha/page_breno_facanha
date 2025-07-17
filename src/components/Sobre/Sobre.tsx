@@ -11,12 +11,12 @@ export default function Sobre() {
             <p className="text-gray-500 text-xl font-medium p-0 m-0 pt-5"> Especializado em criar experiências digitais e modernas e funcionais</p>
             <p className="text-gray-500 text-xl font-medium p-0 m-0">Transformo ideias em código limpo e soluções eficientes</p>
             <div className="w-full py-8 flex justify-center items-center flex-col gap-6 sm:flex-row">
-                <button className="w-70 h-12 bg-purple-600 rounded-lg text-sm font-bold flex items-center justify-center gap-4 cursor-pointer">
+                <a href="#contact" className="w-70 h-12 bg-purple-600 rounded-lg text-sm font-bold flex items-center justify-center gap-4 cursor-pointer">
                     <MessageCircle size={15} strokeWidth={2.5} />
                     <p className="tracking-wide text-base">
                         Vamos Conversar
                     </p>
-                </button>
+                </a>
                 <a href="curriculumTeste.pdf"
                     download="curriculum.pdf"
                 >

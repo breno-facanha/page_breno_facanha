@@ -1,3 +1,7 @@
+import { Github, Linkedin, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
+import { PiWhatsappLogo } from "react-icons/pi";
+
 export default function Contact() {
     return (
         <div id="contact" className="w-full min-h-screen bg-gray-50 flex flex-col items-center pt-25 px-4">
@@ -11,7 +15,51 @@ export default function Contact() {
                 </p>
             </div>
             <div className="w-full flex flex-col sm:flex-row  gap-8 justify-center mt-10 mb-10">
-                <div className="sm:w-[40%] h-[550px] sm:h-[500px] bg-red-200"></div>
+                <div className="sm:w-[40%] h-[550px] sm:h-[500px] px-5 pt-4">
+                    <h3 className="text-black text-2xl font-semibold">Entre em contato</h3>
+                    <p className="text-gray-500 text-md">
+                        Estou sempre aberto a discutir novos projetos, oportunidades criativas ou parcerias.
+                        Não hesite em entrar em contato!
+                    </p>
+                    <div className="">
+                        <a href="mailto:brenofacanha.ti@gmail.com" className="group flex items-center gap-3 mt-4 border border-gray-200 rounded-lg p-4 hover:scale-102 transition duration-500 cursor-pointer">
+                            <div className=" group-hover:bg-gray-300 group-hover:duration-300 px-3 py-3 bg-gray-200 rounded-lg">
+                                <Mail color="#7C3AED"/>
+                            </div>
+                            <div className="">
+                                <p className="text-black">Email</p>
+                                <p className="text-gray-500">brenofacanha.ti@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="tel:+5585996853592" className="group flex items-center gap-3 mt-4 border border-gray-200 rounded-lg p-4 hover:scale-102 transition duration-500 cursor-pointer">
+                            <div className="group-hover:bg-gray-300 group-hover:duration-300 px-3 py-3 bg-gray-200 rounded-lg">
+                                <Phone color="#7C3AED"/>
+                            </div>
+                            <div className="">
+                                <p className="text-black">Telefone</p>
+                                <p className="text-gray-500">+ 55 (85) 99685-3592</p>
+                            </div>
+                        </a>
+                        <div className="group flex items-center gap-3 mt-4 border border-gray-200 rounded-lg p-4 hover:scale-102 transition duration-500 cursor-pointer">
+                            <div className="group-hover:bg-gray-300 group-hover:duration-300 px-3 py-3 bg-gray-200 rounded-lg">
+                                <MapPin color="#7C3AED"/>
+                            </div>
+                            <div className="">
+                                <p className="text-black">Localização</p>
+                                <p className="text-gray-500">Fortaleza, CE</p>
+                            </div>
+                        </div>
+                        <div className="flex flex-col mt-4 text-lg">
+                            <p className="text-black font-semibold mb-3">Me siga nas redes sociais</p>
+                            <div className="flex gap-5">
+                                <a href="https://github.com/breno-facanha" target="_blank" className="bg-gray-200 px-4 py-3 rounded-xl hover:scale-110 transition duration-500"><Github color="black" size={22} /></a>
+                                <a href="https://www.linkedin.com/in/breno-fa%C3%A7anha-5a57a3b6/" target="_blank" className="bg-gray-200 px-4 py-3 rounded-xl hover:scale-110 transition duration-500"><Linkedin color="black" size={22}/></a>
+                                <a href="https://wa.me/5585996853592" target="_blank" className="bg-gray-200 px-4 py-3 rounded-xl hover:scale-110 transition duration-500"><FaWhatsapp color="black" size={23}/></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
                 <div className="sm:w-[40%] h-[550px] sm:h-[500px] border-1 border-gray-200 rounded-2xl text-black px-5 pt-5">
                     <h3 className="text-black text-2xl font-semibold">Envie uma Mensagem</h3>
                     <p className="text-gray-500 text-md">Preencha o formulário abaixo e retornarei o contato o mais breve possível.</p>

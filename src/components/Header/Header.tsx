@@ -27,7 +27,7 @@ export default function Header() {
                 <div className="hidden md:flex md:items-center md:space-x-4">
                     <a href="https://github.com/breno-facanha" target="_blank" className="hover:bg-gray-100 px-3 py-3 rounded-xl"><Github color="black" size={17} /></a>
                     <a href="https://www.linkedin.com/in/breno-fa%C3%A7anha-5a57a3b6/" target="_blank" className="hover:bg-gray-100 px-3 py-3 rounded-xl"><Linkedin color="black" size={17}/></a>
-                    <a href="" target="_blank" className="hover:bg-gray-100 px-3 py-3 rounded-xl"><Mail color="black" size={17}/></a>
+                    <a href="mailto:brenofacanha.ti@gmail.com" target="_blank" className="hover:bg-gray-100 px-3 py-3 rounded-xl"><Mail color="black" size={17}/></a>
                 </div>
                 <div className="md:hidden ">
                     <button 
