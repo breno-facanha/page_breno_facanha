@@ -13,16 +13,12 @@ export default function MyProject() {
                 </p>
             </div>
              <div className="w-full py-8 flex justify-center items-center flex-col gap-6 sm:flex-row">
-                <button className="w-50 h-12 bg-purple-600 rounded-lg text-sm font-bold flex items-center justify-center gap-4 cursor-pointer">
+                <a href="https://github.com/breno-facanha" className="w-50 h-12 bg-purple-600 rounded-lg text-sm font-bold flex items-center justify-center gap-4 cursor-pointer">
                     <p className="tracking-wide text-base">
                         Todos os Projetos
                     </p>
-                </button>
-                <button className="w-50 h-12 bg-white  rounded-lg text-gray-700 text-sm font-bold flex items-center justify-center gap-4 border border-gray-300 cursor-pointer">
-                    <p className="tracking-wide text-base">
-                        Projeto em Destaque
-                    </p>
-                </button>
+                </a>
+               
             </div>
             <div className=" flex flex-wrap justify-center items-center gap-20 w-full max-w-6xl mb-10 ">
                 <CardProject 
