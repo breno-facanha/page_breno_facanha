@@ -37,22 +37,22 @@ export default function Header() {
                     </button>
                 </div>
                 {isOpen && (
-                    <div className="w-full absolute top-16 right-0 bg-white shadow-lg rounded-lg p-4 z-50">
+                    <div className="w-full absolute top-16 right-0 bg-white shadow-lg rounded-lg  z-50">
                         <ul className="space-y-2">
                             <li>
-                                <a href="#" className="block text-gray-800 hover:text-gray-900" onClick={closeMenu}>Início</a>
+                                <a href="#" className="block hover:text-purple-700 text-gray-900 hover:bg-gray-200 pl-5 py-2 font-semibold" onClick={closeMenu}>Início</a>
                             </li>
                             <li>
-                                <a href="#sobre" className="block text-gray-800 hover:text-gray-900" onClick={closeMenu}>Sobre</a>
+                                <a href="#sobre" className="block hover:text-purple-700 text-gray-900 hover:bg-gray-200 pl-5 py-2 font-semibold" onClick={closeMenu}>Sobre</a>
                             </li>
                             <li>
-                                <a href="#tec" className="block text-gray-800 hover:text-gray-900" onClick={closeMenu}>Tecnologias</a>
+                                <a href="#tec" className="block hover:text-purple-700 text-gray-900 hover:bg-gray-200 pl-5 py-2 font-semibold" onClick={closeMenu}>Tecnologias</a>
                             </li>
                             <li>
-                                <a href="#project" className="block text-gray-800 hover:text-gray-900" onClick={closeMenu}>Projetos</a>
+                                <a href="#project" className="block hover:text-purple-700 text-gray-900 hover:bg-gray-200 pl-5 py-2 font-semibold" onClick={closeMenu}>Projetos</a>
                             </li>
                             <li>
-                                <a href="" className="block text-gray-800 hover:text-gray-900" onClick={closeMenu}>Contato</a>
+                                <a href="" className="block hover:text-purple-700 text-gray-900 hover:bg-gray-200 pl-5 py-2 font-semibold" onClick={closeMenu}>Contato</a>
                             </li>
                         </ul>
                         </div>

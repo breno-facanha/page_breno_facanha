@@ -2,7 +2,7 @@ import CardProject from "../CardProject/CardProject";
 
 export default function MyProject() {
     return (
-        <div id="project" className="w-full h-screen bg-gray-50 flex flex-col items-center pt-25 px-4">
+        <div id="project" className="w-full min-h-screen bg-gray-50 flex flex-col items-center pt-25 px-4">
             <div className="flex gap-2 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-purple-600">
             <span className="text-black text-2xl font-bold ">Meus</span>
                 Projetos 
