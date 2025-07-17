@@ -1,6 +1,5 @@
-import { Github, Linkedin, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
-import { PiWhatsappLogo } from "react-icons/pi";
 
 export default function Contact() {
     return (
