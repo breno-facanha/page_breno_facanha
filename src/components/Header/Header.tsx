@@ -22,7 +22,7 @@ export default function Header() {
                     <a href="#sobre" className="hover:scale-110 hover:text-gray-900 duration-200 transform">Sobre</a>
                     <a href="#tec" className="hover:scale-110 hover:text-gray-900 duration-200 transform">Tecnologias</a>
                     <a href="#project" className="hover:scale-110 hover:text-gray-900 duration-200 transform">Projetos</a>
-                    <a href="" className="hover:scale-110 hover:text-gray-900 duration-200 transform">Contato</a>
+                    <a href="#contact" className="hover:scale-110 hover:text-gray-900 duration-200 transform">Contato</a>
                 </div>
                 <div className="hidden md:flex md:items-center md:space-x-4">
                     <a href="https://github.com/breno-facanha" target="_blank" className="hover:bg-gray-100 px-3 py-3 rounded-xl"><Github color="black" size={17} /></a>

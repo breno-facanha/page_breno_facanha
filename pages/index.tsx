@@ -1,3 +1,4 @@
+import Contact from "@/src/components/Contact/Contact";
 import Header from "@/src/components/Header/Header";
 import MyProject from "@/src/components/MyProject/MyProject";
 import Sobre from "@/src/components/Sobre/Sobre";
@@ -10,6 +11,7 @@ export default function Home() {
       <Sobre />
       <Technology />
       <MyProject />
+      <Contact />
     </div>
   );
 }
