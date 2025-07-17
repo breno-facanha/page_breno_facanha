@@ -2,7 +2,7 @@ import CardProject from "../CardProject/CardProject";
 
 export default function MyProject() {
     return (
-        <div id="project" className="w-full h-auto bg-gray-50 flex flex-col items-center pt-25 px-4">
+        <div id="project" className="w-full h-screen bg-gray-50 flex flex-col items-center pt-25 px-4">
             <div className="flex gap-2 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-purple-600">
             <span className="text-black text-2xl font-bold ">Meus</span>
                 Projetos 
@@ -34,12 +34,12 @@ export default function MyProject() {
                     liveDemoLink= "https://breno-facanha.github.io/projeto-explorer-013/"
                 />
                 <CardProject 
-                    imageUrl="to-do-list.png" 
-                    title="Gerenciador de Tarefas" 
-                    description="Uma aplicação simples para gerenciar suas tarefas diárias, com funcionalidades de adicionar, remover e marcar como concluídas" 
-                    technologies={["JavaScript", "React", "Tailwind CSS"]}
-                    githubLink= "https://github.com/breno-facanha/lista-de-tarefas"
-                    liveDemoLink= "https://lista-de-tarefas-smoky-zeta.vercel.app/"
+                    imageUrl="anime-flix.png" 
+                    title="Anime Flix" 
+                    description="Cadastro de animes, onde é possível cadastrar e vizualizar notas dos animes cadastrados." 
+                    technologies={["JavaScript", "React", "Tailwind CSS", "Node.js", "Express", "PostgreSQL"]}
+                    githubLink= "https://github.com/breno-facanha/front-anime"
+                    liveDemoLink= "https://front-anime-lovat.vercel.app/animes"
                 />
                 <CardProject 
                     imageUrl="to-do-list.png" 
