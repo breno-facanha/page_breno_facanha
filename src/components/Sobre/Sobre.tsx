@@ -17,12 +17,16 @@ export default function Sobre() {
                         Vamos Conversar
                     </p>
                 </button>
-                <button className="w-70 h-12 bg-white  rounded-lg text-gray-700 text-sm font-bold flex items-center justify-center gap-4 border border-gray-300 cursor-pointer">
-                    <Download  size={15} strokeWidth={2.5}/>
-                    <p className="tracking-wide text-base">
-                        Download CV
-                    </p>
-                </button>
+                <a href="curriculumTeste.pdf"
+                    download="curriculum.pdf"
+                >
+                    <button className="w-70 h-12 bg-white  rounded-lg text-gray-700 text-sm font-bold flex items-center justify-center gap-4 border border-gray-300 cursor-pointer">
+                        <Download  size={15} strokeWidth={2.5}/>
+                        <p className="tracking-wide text-base">
+                            Download CV
+                        </p>
+                    </button>
+                </a>
             </div>
             <div className="flex flex-col w-full pt-5 h-auto sm:flex-row sm:justify-center bg-gray-50">
                 <CardSobre  value="1" description="Anos de Experiência"/>
