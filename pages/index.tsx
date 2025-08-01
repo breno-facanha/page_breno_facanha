@@ -3,6 +3,8 @@ import Header from "@/src/components/Header/Header";
 import MyProject from "@/src/components/MyProject/MyProject";
 import Sobre from "@/src/components/Sobre/Sobre";
 import Technology from "@/src/components/Technology/Technology";
+ import { ToastContainer, toast } from 'react-toastify';
+
 
 export default function Home() {
   return (
@@ -12,6 +14,11 @@ export default function Home() {
       <Technology />
       <MyProject />
       <Contact />
+      <ToastContainer 
+        position="top-right"
+        autoClose={4000}
+        theme="dark"
+      />
     </div>
   );
 }

@@ -1,7 +1,20 @@
 import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 export default function Contact() {
+
+    const [nome, setNome] = useState("");
+    const [email, setEmail] = useState("");
+    const [assunto, setAssunto] = useState("");
+    const [mensagem, setMensagem] = useState("");
+
+    function handleSubmit() {
+        toast.success("Mensagem enviada com sucesso!")
+    }
+
+
     return (
         <div id="contact" className="w-full min-h-screen bg-gray-50 flex flex-col items-center pt-25 px-4">
             <div className="flex gap-2 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-purple-600">
@@ -82,7 +95,7 @@ export default function Contact() {
                             <textarea className="border h-20 sm:h-32 border-gray-200 rounded-lg outline-none pl-3 pt-2 resize-none placeholder:text-sm" placeholder="Conte-me sobre seu projeto..."></textarea>
                         </div>
                         <div className="w-full flex pt-5">
-                            <button className="w-full h-12 bg-[#7C3AED] text-white rounded-lg pl-3 text-sm font-bold flex items-center justify-center gap-4 cursor-pointer">
+                            <button onClick={handleSubmit} className="w-full h-12 bg-[#7C3AED] text-white rounded-lg pl-3 text-sm font-bold flex items-center justify-center gap-4 cursor-pointer">
                                 <p className="tracking-wide text-base">
                                     Enviar Mensagem
                                 </p>
