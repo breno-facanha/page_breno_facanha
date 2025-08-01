@@ -12,7 +12,7 @@ export default function Contact() {
     const [assunto, setAssunto] = useState("");
     const [mensagem, setMensagem] = useState("");
 
-    function handleSubmit() {
+   async function handleSubmit() {
 
         if (!nome || !email || !assunto || !mensagem) {
             toast.error("Por favor, preencha todos os campos.");
@@ -26,7 +26,7 @@ export default function Contact() {
             mensagem
         };
 
-        instance.post("/send", dadosEmail)
+        await instance.post("/send", dadosEmail)
         toast.success("Mensagem enviada com sucesso!")
     }
 
