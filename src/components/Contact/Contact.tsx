@@ -19,7 +19,7 @@ export default function Contact() {
             return;
         }
 
-        let dadosEmail = {
+        const dadosEmail = {
             nome,
             email,
             assunto,
