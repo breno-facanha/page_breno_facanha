@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Carrosel() {
     const technologies = [
         "Html5",
@@ -24,9 +26,9 @@ export default function Carrosel() {
         <span className="flex flex-col justify-center items-center w-44 hover:scale-115 transition-transform duration-300 ease-in-out">
            <p className="w-10 mt-10 ">
             {imagens.includes(tech) ? (
-                <img src={tech} alt={tech} className="w-10 h-10 mb-2" />  
+                <Image src={tech} alt={tech} className="w-10 h-10 mb-2" />  
             ) : (
-                <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech.toLowerCase()}/${tech.toLowerCase()}-original.svg`} alt={tech} />
+                <Image src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech.toLowerCase()}/${tech.toLowerCase()}-original.svg`} alt={tech} />
             )}
             </p>
            
