@@ -27,6 +27,10 @@ export default function Contact() {
         };
 
         await instance.post("/send", dadosEmail)
+        setNome("");
+        setEmail("");
+        setAssunto("");
+        setMensagem("");
         toast.success("Mensagem enviada com sucesso!")
     }
 
