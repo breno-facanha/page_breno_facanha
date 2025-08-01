@@ -1,3 +1,5 @@
+
+import { instance } from "@/src/instance/instance";
 import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
@@ -11,9 +13,22 @@ export default function Contact() {
     const [mensagem, setMensagem] = useState("");
 
     function handleSubmit() {
+
+        if (!nome || !email || !assunto || !mensagem) {
+            toast.error("Por favor, preencha todos os campos.");
+            return;
+        }
+
+        let dadosEmail = {
+            nome,
+            email,
+            assunto,
+            mensagem
+        };
+
+        instance.post("/send", dadosEmail)
         toast.success("Mensagem enviada com sucesso!")
     }
-
 
     return (
         <div id="contact" className="w-full min-h-screen bg-gray-50 flex flex-col items-center pt-25 px-4">
@@ -26,7 +41,7 @@ export default function Contact() {
                     Tem um projeto em mente? Vamos transformar sua ideia em realidade. Entre em contato comigo!
                 </p>
             </div>
-            <div className="w-full flex flex-col sm:flex-row  gap-8 justify-center mt-10 mb-10">
+            <div className="w-full flex flex-col sm:flex-row gap-8 justify-center mt-10 mb-10">
                 <div className="sm:w-[40%] h-[550px] sm:h-[500px] px-5 pt-4">
                     <h3 className="text-black text-2xl font-semibold">Entre em contato</h3>
                     <p className="text-gray-500 text-md">
@@ -72,27 +87,39 @@ export default function Contact() {
                         
                     </div>
                 </div>
-                <div className="sm:w-[40%] h-[550px] sm:h-[500px] border-1 border-gray-200 rounded-2xl text-black px-5 pt-5">
+                <div className="sm:w-[40%] h-[550px] sm:h-[520px] border-1 border-gray-200 rounded-2xl text-black px-5 pt-5">
                     <h3 className="text-black text-2xl font-semibold">Envie uma Mensagem</h3>
                     <p className="text-gray-500 text-md">Preencha o formulário abaixo e retornarei o contato o mais breve possível.</p>
                     <div className="mt-5">
                         <div className="flex flex-col sm:flex-row gap-2">
                             <div className="flex flex-col w-full">
                                 <label htmlFor="" className="text-black font-semibold pl-0.5 tracking-wide">Nome *</label>
-                                <input className="border border-gray-200 rounded-lg outline-none pl-3 py-2 placeholder:text-sm " type="text" placeholder="Seu nome completo" />
+                                <input
+                                    value={nome}
+                                    onChange={(e) => setNome(e.target.value)} 
+                                    className="border border-gray-200 rounded-lg outline-none pl-3 py-2 placeholder:text-sm " type="text" placeholder="Seu nome completo" />
                             </div>
                             <div className="flex flex-col w-full">
                                 <label htmlFor="" className="text-black font-semibold pl-0.5 tracking-wide ">Email *</label>
-                                <input className="border border-gray-200 rounded-lg outline-none pl-3 py-2 placeholder:text-sm" type="text" placeholder="seu@email.com" />
+                                <input 
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    className="border border-gray-200 rounded-lg outline-none pl-3 py-2 placeholder:text-sm" type="text" placeholder="seu@email.com" />
                             </div>
                         </div>
                         <div className="flex flex-col w-full mt-4">
                             <label htmlFor="" className="text-black font-semibold pl-0.5 tracking-wide ">Assunto *</label>
-                            <input className="border border-gray-200 rounded-lg outline-none pl-3 py-2 placeholder:text-sm" type="text" placeholder="Assunto da mensagem" />
+                            <input
+                                value={assunto}
+                                onChange={(e) => setAssunto(e.target.value)} 
+                                className="border border-gray-200 rounded-lg outline-none pl-3 py-2 placeholder:text-sm" type="text" placeholder="Assunto da mensagem" />
                         </div>
                         <div className="flex flex-col w-full mt-4">
                             <label htmlFor="" className="text-black font-semibold pl-0.5 tracking-wide ">Mensagem *</label>
-                            <textarea className="border h-20 sm:h-32 border-gray-200 rounded-lg outline-none pl-3 pt-2 resize-none placeholder:text-sm" placeholder="Conte-me sobre seu projeto..."></textarea>
+                            <textarea 
+                                value={mensagem}
+                                onChange={(e) => setMensagem(e.target.value)}
+                                className="border h-20 sm:h-32 border-gray-200 rounded-lg outline-none pl-3 pt-2 resize-none placeholder:text-sm" placeholder="Conte-me sobre seu projeto..."></textarea>
                         </div>
                         <div className="w-full flex pt-5">
                             <button onClick={handleSubmit} className="w-full h-12 bg-[#7C3AED] text-white rounded-lg pl-3 text-sm font-bold flex items-center justify-center gap-4 cursor-pointer">
