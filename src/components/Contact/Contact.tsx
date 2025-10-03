@@ -91,11 +91,11 @@ export default function Contact() {
                         
                     </div>
                 </div>
-                <div className="sm:w-[40%] h-[550px] sm:h-[520px] border-1 border-gray-200 rounded-2xl text-black px-5 pt-5">
+                <div className="w-full sm:w-[40%] border-1 border-gray-200 rounded-2xl text-black px-5 pt-5">
                     <h3 className="text-black text-2xl font-semibold">Envie uma Mensagem</h3>
                     <p className="text-gray-500 text-md">Preencha o formulário abaixo e retornarei o contato o mais breve possível.</p>
                     <div className="mt-5">
-                        <div className="flex flex-col sm:flex-row gap-2">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                             <div className="flex flex-col w-full">
                                 <label htmlFor="" className="text-black font-semibold pl-0.5 tracking-wide">Nome *</label>
                                 <input
@@ -123,10 +123,10 @@ export default function Contact() {
                             <textarea 
                                 value={mensagem}
                                 onChange={(e) => setMensagem(e.target.value)}
-                                className="border h-20 sm:h-32 border-gray-200 rounded-lg outline-none pl-3 pt-2 resize-none placeholder:text-sm" placeholder="Conte-me sobre seu projeto..."></textarea>
+                                className="border min-h-28 sm:min-h-36 border-gray-200 rounded-lg outline-none pl-3 pt-2 resize-y placeholder:text-sm" placeholder="Conte-me sobre seu projeto..."></textarea>
                         </div>
-                        <div className="w-full flex pt-5">
-                            <button onClick={handleSubmit} className="w-full h-12 bg-[#7C3AED] text-white rounded-lg pl-3 text-sm font-bold flex items-center justify-center gap-4 cursor-pointer">
+                        <div className="w-full flex pt-4">
+                            <button onClick={handleSubmit} className="w-full h-12 bg-[#7C3AED] text-white rounded-lg pl-3 text-sm font-bold flex items-center justify-center gap-4 cursor-pointer mb-4">
                                 <p className="tracking-wide text-base">
                                     Enviar Mensagem
                                 </p>
