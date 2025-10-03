@@ -26,9 +26,9 @@ export default function Carrosel() {
         <span className="flex flex-col justify-center items-center w-44 hover:scale-115 transition-transform duration-300 ease-in-out">
            <p className="w-10 mt-10 ">
             {imagens.includes(tech) ? (
-                <Image src={tech} alt={tech} className="w-10 h-10 mb-2" />  
+                <Image width={100} height={100} src={`/${tech}.png`} alt={tech} className="w-10 h-10 mb-2" />  
             ) : (
-                <Image src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech.toLowerCase()}/${tech.toLowerCase()}-original.svg`} alt={tech} />
+                <Image width={100} height={100} src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech.toLowerCase()}/${tech.toLowerCase()}-original.svg`} alt={tech} />
             )}
             </p>
            

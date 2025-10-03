@@ -22,7 +22,7 @@ export default function MyProject() {
             </div>
             <div className=" flex flex-wrap justify-center items-center gap-20 w-full max-w-6xl mb-10 ">
                 <CardProject 
-                    imageUrl="focus-timer.png" 
+                    imageUrl="/focus-timer.png" 
                     title="Focus Timer" 
                     description="Cronometro no estilo pomodoro, ideal para estudos e concentração em alguma demanda" 
                     technologies={["Html", "Css", "JavaScript"]}
@@ -30,7 +30,7 @@ export default function MyProject() {
                     liveDemoLink= "https://breno-facanha.github.io/projeto-explorer-013/"
                 />
                 <CardProject 
-                    imageUrl="anime-flix.png" 
+                    imageUrl="/anime-flix.png" 
                     title="Anime Flix" 
                     description="Cadastro de animes, onde é possível cadastrar e vizualizar notas dos animes cadastrados." 
                     technologies={["JavaScript", "React", "Tailwind CSS", "Node.js", "Express", "PostgreSQL"]}
@@ -38,7 +38,7 @@ export default function MyProject() {
                     liveDemoLink= "https://front-anime-lovat.vercel.app/animes"
                 />
                 <CardProject 
-                    imageUrl="to-do-list.png" 
+                    imageUrl="/to-do-list.png" 
                     title="Gerenciador de Tarefas" 
                     description="Uma aplicação simples para gerenciar suas tarefas diárias, com funcionalidades de adicionar, remover e marcar como concluídas" 
                     technologies={["JavaScript", "React", "Tailwind CSS"]}
