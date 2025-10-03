@@ -40,10 +40,18 @@ export default function MyProject() {
                 <CardProject 
                     imageUrl="/to-do-list.png" 
                     title="Gerenciador de Tarefas" 
-                    description="Uma aplicação simples para gerenciar suas tarefas diárias, com funcionalidades de adicionar, remover e marcar como concluídas" 
+                    description="Uma aplicação para gerenciar suas tarefas diárias, com funcionalidades de adicionar, remover e marcar como concluídas" 
                     technologies={["JavaScript", "React", "Tailwind CSS"]}
                     githubLink= "https://github.com/breno-facanha/lista-de-tarefas"
                     liveDemoLink= "https://lista-de-tarefas-smoky-zeta.vercel.app/"
+                />
+                <CardProject 
+                    imageUrl="/mamadasRegister.png" 
+                    title="Historico de Mamadas" 
+                    description="App para registrar mamadas da minha bebê, com funções de adicionar quantidade em ml, ver histórico e incluir observações."
+                    technologies={["ReactNative", "Expo", "TypeScript", "StyleSheet", "Node.js", "Express", "PostgreSQL", "Prisma"]}
+                    githubLink= "https://github.com/breno-facanha/baby-feeding-monitoring"
+                    liveDemoLink= "https://github.com/breno-facanha/api-baby-feeding-monitoring"
                 />
             </div>
         </div>
