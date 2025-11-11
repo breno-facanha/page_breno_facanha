@@ -17,8 +17,8 @@ export default function Sobre() {
                         Vamos Conversar
                     </p>
                 </a>
-                <a href="curriculo.pdf"
-                    download="curriculo.pdf"
+                <a href="curriculoBreno.pdf"
+                    download="curriculoBreno.pdf"
                 >
                     <button className="w-70 h-12 bg-white  rounded-lg text-gray-700 text-sm font-bold flex items-center justify-center gap-4 border border-gray-300 cursor-pointer">
                         <Download  size={15} strokeWidth={2.5}/>
