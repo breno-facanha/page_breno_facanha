@@ -24,11 +24,11 @@ export default function Carrosel() {
 
     const TechBadge = ({ tech }: { tech: string })  => (
         <span className="flex flex-col justify-center items-center w-44 hover:scale-115 transition-transform duration-300 ease-in-out">
-           <p className="w-10 mt-10 ">
+           <p className="w-15 mt-1 ">
             {imagens.includes(tech) ? (
-                <Image width={100} height={100} src={`/${tech}.png`} alt={tech} className="w-10 h-10 mb-2" />  
+                <Image width={150} height={150} src={`/${tech}.png`} alt={tech} className="w-10 h-10 mb-2" />  
             ) : (
-                <Image width={100} height={100} src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech.toLowerCase()}/${tech.toLowerCase()}-original.svg`} alt={tech} />
+                <Image width={150} height={150} src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech.toLowerCase()}/${tech.toLowerCase()}-original.svg`} alt={tech} />
             )}
             </p>
            
@@ -37,25 +37,27 @@ export default function Carrosel() {
 
     return (
         <div className="w-full overflow-hidden py-4 bg-gray-50">
-            <div 
-                className="flex whitespace-nowrap gap-8"
-                style={{
-                    animation: 'marquee 10s linear infinite'
-                }}
-            >
-                {technologies.map((tech, idx) => (
-                    <TechBadge key={idx} tech={tech} />
-                ))}
-                {technologies.map((tech, idx) => (
-                    <TechBadge key={idx + 100} tech={tech} />
-                ))}
+            <div className="flex">
+                <div className="flex whitespace-nowrap gap-8 animate-marquee">
+                    {technologies.map((tech, idx) => (
+                        <TechBadge key={idx} tech={tech} />
+                    ))}
+                </div>
+                <div className="flex whitespace-nowrap gap-8 animate-marquee" aria-hidden="true">
+                    {technologies.map((tech, idx) => (
+                        <TechBadge key={`duplicate-${idx}`} tech={tech} />
+                    ))}
+                </div>
             </div>
             
             <style jsx global>
                 {`
                     @keyframes marquee {
-                        0% { transform: translateX(0); }
-                        100% { transform: translateX(-50%); }
+                        from { transform: translateX(0); }
+                        to { transform: translateX(-100%); }
+                    }
+                    .animate-marquee {
+                        animation: marquee 20s linear infinite;
                     }
                 `}
             </style>
