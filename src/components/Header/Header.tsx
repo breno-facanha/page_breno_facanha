@@ -19,7 +19,6 @@ export default function Header() {
                 </div>
                 <div className="hidden md:flex md:items-center md:text-gray-800 md:font-medium md:space-x-8 sm:text-md ">
                     <a href="#" className="hover:scale-110 hover:text-gray-900 duration-200 transform">Início</a>
-                    <a href="#sobre" className="hover:scale-110 hover:text-gray-900 duration-200 transform">Sobre</a>
                     <a href="#tec" className="hover:scale-110 hover:text-gray-900 duration-200 transform">Tecnologias</a>
                     <a href="#project" className="hover:scale-110 hover:text-gray-900 duration-200 transform">Projetos</a>
                     <a href="#contact" className="hover:scale-110 hover:text-gray-900 duration-200 transform">Contato</a>
