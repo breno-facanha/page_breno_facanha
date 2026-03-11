@@ -22,6 +22,15 @@ export default function MyProject() {
             </div>
             <div className=" flex flex-wrap justify-center items-center gap-20 w-full max-w-6xl mb-10 ">
                 <CardProject 
+                    imageUrl="/mercadinho.png" 
+                    title="Mercadinho Inteligente"
+                    isDesenvolved={true}
+                    description="controle de estoque para um mercadinho, onde é possível cadastrar produtos, visualizar o estoque e registrar vendas" 
+                    technologies={["Typescript", "Node.js", "PostgreSQL", "Prisma", "Express", "Next.js", "Tailwind CSS"]}
+                    githubLink= "https://github.com/breno-facanha/mercadinho-web"
+                    liveDemoLink= "https://mercadinho-web.vercel.app/dashboard"
+                />
+                <CardProject 
                     imageUrl="/focus-timer.png" 
                     title="Focus Timer" 
                     description="Cronometro no estilo pomodoro, ideal para estudos e concentração em alguma demanda" 
