@@ -13,7 +13,7 @@ interface CardProjectProps {
 
 export default function CardProject({ imageUrl, title, description, technologies, githubLink, liveDemoLink, isDesenvolved }: CardProjectProps) {
     return(
-        <div className="w-100 h-[510px] border-1 text-center rounded-2xl hover:scale-105 transition-all duration-500 ease-in-out shadow-lg bg-white mt-8 flex flex-col justify-between pb-1">
+        <div className="w-100 h-[520px] border-1 text-center rounded-2xl hover:scale-105 transition-all duration-500 ease-in-out shadow-lg bg-white mt-8 flex flex-col justify-between pb-1">
             <div className="h-60 rounded-t-2xl float-top">
                 <Image src={imageUrl} width={1000} height={1000} alt="Project Thumbnail" className="w-full h-60 rounded-t-2xl object-cover max-h-full"/>
             </div>
@@ -31,7 +31,7 @@ export default function CardProject({ imageUrl, title, description, technologies
                     </p>
                 ))}
             </div>
-            <div className=" text-black justify-between flex px-5 mt-5 ">
+            <div className=" text-black justify-between flex px-5 mt-10">
                 <a href={githubLink} className="flex items-center gap-2 hover:bg-gray-100 px-3 py-2 rounded-lg transition-colors duration-300" target="_blank">
                     <Github className="text-black" size={17} />
                     <span className="text-sm">Git Hub</span>
