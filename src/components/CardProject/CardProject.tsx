@@ -13,7 +13,7 @@ interface CardProjectProps {
 
 export default function CardProject({ imageUrl, title, description, technologies, githubLink, liveDemoLink, isDesenvolved }: CardProjectProps) {
     return(
-        <div className="w-100 h-[520px] border-1 text-center rounded-2xl hover:scale-105 transition-all duration-500 ease-in-out shadow-lg bg-white mt-8 flex flex-col justify-between pb-1">
+        <div className="w-100 h-[550px] border-1 text-center rounded-2xl hover:scale-105 transition-all duration-500 ease-in-out shadow-lg bg-white mt-8 flex flex-col justify-between pb-1">
             <div className="h-60 rounded-t-2xl float-top">
                 <Image src={imageUrl} width={1000} height={1000} alt="Project Thumbnail" className="w-full h-60 rounded-t-2xl object-cover max-h-full"/>
             </div>
