@@ -30,7 +30,7 @@ export default function Technology() {
                 <CardTecnology
                     url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                     titulo="Mobile"
-                    description="Desenvolvimento de aplicativos cross-platformc com React Native"
+                    description="Desenvolvimento de aplicativos cross-platform com React Native"
                 />
             </div>
         </div>
