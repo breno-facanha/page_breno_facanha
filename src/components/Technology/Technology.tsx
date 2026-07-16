@@ -27,6 +27,11 @@ export default function Technology() {
                     titulo="Back-End"
                     description="Desenvolvimento de APIs robustas e escaláveis com Node.js e Express"
                 />
+                <CardTecnology
+                    url="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    titulo="Mobile"
+                    description="Desenvolvimento de aplicativos cross-platformc com React Native"
+                />
             </div>
         </div>
         
